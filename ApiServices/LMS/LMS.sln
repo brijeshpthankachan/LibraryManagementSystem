@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LMS.Api", "LMS.Api\LMS.Api.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LMS.Infrastructure", "LMS.Infrastructure\LMS.Infrastructure.csproj", "{CFD24574-ED72-4E0B-957D-578F3C544AC7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LMS.Application", "LMS.Application\LMS.Application.csproj", "{7289894B-C117-4E9B-B19F-1D9E894665F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{CFD24574-ED72-4E0B-957D-578F3C544AC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFD24574-ED72-4E0B-957D-578F3C544AC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFD24574-ED72-4E0B-957D-578F3C544AC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7289894B-C117-4E9B-B19F-1D9E894665F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7289894B-C117-4E9B-B19F-1D9E894665F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7289894B-C117-4E9B-B19F-1D9E894665F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7289894B-C117-4E9B-B19F-1D9E894665F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
