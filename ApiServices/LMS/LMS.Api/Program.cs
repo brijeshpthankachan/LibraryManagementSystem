@@ -18,9 +18,9 @@ try
     builder.Services.AddControllers();
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
-    builder.Services.AddTransient<ExceptionHandlingMiddleWare>();
     builder.Services.AddInfrastructureRegistryServices(builder.Configuration);
     builder.Services.AddApplicationRegistryServices();
+    builder.Services.AddTransient<ExceptionHandlingMiddleWare>();
     var app = builder.Build();
     if (app.Environment.IsDevelopment())
     {
@@ -30,6 +30,7 @@ try
         app.UseSwagger();
         app.UseSwaggerUI();
     }
+    app.UseMiddleware<ExceptionHandlingMiddleWare>();
     app.UseHttpsRedirection();
     app.UseAuthorization();
     app.MapControllers();

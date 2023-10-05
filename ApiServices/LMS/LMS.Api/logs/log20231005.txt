@@ -83,4 +83,689 @@ ORDER BY \"MigrationId\";"
  2023-10-05 12:42:53.542 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - -
  2023-10-05 12:42:53.613 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 70.8368ms
  2023-10-05 12:43:39.526 +05:30 [Information] (Audit API///) Application is shutting down...
+ 2023-10-05 12:55:18.021 +05:30 [Information] (Audit API///) Starting up Api service...
+ 2023-10-05 12:55:19.293 +05:30 [Information] (Audit API///) Executed DbCommand ("35"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)"
+ 2023-10-05 12:55:19.347 +05:30 [Information] (Audit API///) Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)"
+ 2023-10-05 12:55:19.379 +05:30 [Information] (Audit API///) Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";"
+ 2023-10-05 12:55:19.400 +05:30 [Information] (Audit API///) No migrations were applied. The database is already up to date.
+ 2023-10-05 12:55:19.638 +05:30 [Information] (Audit API///) Now listening on: "https://localhost:7145"
+ 2023-10-05 12:55:19.640 +05:30 [Information] (Audit API///) Now listening on: "http://localhost:5001"
+ 2023-10-05 12:55:19.643 +05:30 [Information] (Audit API///) Application started. Press Ctrl+C to shut down.
+ 2023-10-05 12:55:19.645 +05:30 [Information] (Audit API///) Hosting environment: "Development"
+ 2023-10-05 12:55:19.646 +05:30 [Information] (Audit API///) Content root path: "D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Api"
+ 2023-10-05 12:55:20.266 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/swagger/index.html - -
+ 2023-10-05 12:55:20.456 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/swagger/index.html - - - 200 - text/html;charset=utf-8 192.2598ms
+ 2023-10-05 12:55:20.570 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/_vs/browserLink - -
+ 2023-10-05 12:55:20.570 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - -
+ 2023-10-05 12:55:20.578 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 7.7648ms
+ 2023-10-05 12:55:20.598 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.0617ms
+ 2023-10-05 12:55:21.018 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - -
+ 2023-10-05 12:55:21.101 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 83.0163ms
+ 2023-10-05 12:55:24.118 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/swagger/index.html - -
+ 2023-10-05 12:55:24.128 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/swagger/index.html - - - 200 - text/html;charset=utf-8 10.6348ms
+ 2023-10-05 12:55:24.171 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/_vs/browserLink - -
+ 2023-10-05 12:55:24.178 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - -
+ 2023-10-05 12:55:24.180 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 2.1688ms
+ 2023-10-05 12:55:24.187 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.5436ms
+ 2023-10-05 12:55:24.333 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - -
+ 2023-10-05 12:55:24.337 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3.8395ms
+ 2023-10-05 12:55:31.352 +05:30 [Information] (Audit API///) Request starting HTTP/2 POST https://localhost:7145/api/books application/json 20
+ 2023-10-05 12:55:31.360 +05:30 [Information] (Audit API///) Executing endpoint '"LMS.Api.Controllers.TestController.AddBook (LMS.Api)"'
+ 2023-10-05 12:55:31.385 +05:30 [Information] (Audit API///908fce13-40c8-404e-995a-2886c1fb287e) Route matched with "{action = \"AddBook\", controller = \"Test\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddBook(LMS.Application.Features.BookManagement.Commands.AddBookCommand)" on controller "LMS.Api.Controllers.TestController" ("LMS.Api").
+ 2023-10-05 12:55:31.488 +05:30 [Information] (Audit API///) Executed action "LMS.Api.Controllers.TestController.AddBook (LMS.Api)" in 96.2436ms
+ 2023-10-05 12:55:31.492 +05:30 [Information] (Audit API///) Executed endpoint '"LMS.Api.Controllers.TestController.AddBook (LMS.Api)"'
+ 2023-10-05 12:55:31.495 +05:30 [Error] (Audit API///) An unhandled exception has occurred while executing the request.
+LMS.Domain.Exceptions.ValidationException: One or more validation errors occurred
+   at LMS.Application.PipeLineBehaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Application\PipeLineBehaviors\ValidationBehavior.cs:line 38
+   at LMS.Api.Controllers.TestController.AddBook(AddBookCommand command) in D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Api\Controllers\TestController.cs:line 16
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ 2023-10-05 12:55:31.538 +05:30 [Information] (Audit API///) Request finished HTTP/2 POST https://localhost:7145/api/books application/json 20 - 500 - text/plain;+charset=utf-8 186.0357ms
+ 2023-10-05 12:56:43.653 +05:30 [Information] (Audit API///) Starting up Api service...
+ 2023-10-05 12:56:44.797 +05:30 [Information] (Audit API///) Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)"
+ 2023-10-05 12:56:44.862 +05:30 [Information] (Audit API///) Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)"
+ 2023-10-05 12:56:44.891 +05:30 [Information] (Audit API///) Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";"
+ 2023-10-05 12:56:44.911 +05:30 [Information] (Audit API///) No migrations were applied. The database is already up to date.
+ 2023-10-05 12:56:45.069 +05:30 [Information] (Audit API///) Now listening on: "https://localhost:7145"
+ 2023-10-05 12:56:45.071 +05:30 [Information] (Audit API///) Now listening on: "http://localhost:5001"
+ 2023-10-05 12:56:45.074 +05:30 [Information] (Audit API///) Application started. Press Ctrl+C to shut down.
+ 2023-10-05 12:56:45.074 +05:30 [Information] (Audit API///) Hosting environment: "Development"
+ 2023-10-05 12:56:45.076 +05:30 [Information] (Audit API///) Content root path: "D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Api"
+ 2023-10-05 12:56:45.789 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/swagger/index.html - -
+ 2023-10-05 12:56:45.925 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/swagger/index.html - - - 200 - text/html;charset=utf-8 137.2392ms
+ 2023-10-05 12:56:46.008 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/_vs/browserLink - -
+ 2023-10-05 12:56:46.008 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - -
+ 2023-10-05 12:56:46.014 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 6.3290ms
+ 2023-10-05 12:56:46.035 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.2730ms
+ 2023-10-05 12:56:46.180 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - -
+ 2023-10-05 12:56:46.277 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 97.2759ms
+ 2023-10-05 12:56:52.791 +05:30 [Information] (Audit API///) Request starting HTTP/2 POST https://localhost:7145/api/books application/json 20
+ 2023-10-05 12:56:52.797 +05:30 [Information] (Audit API///) Executing endpoint '"LMS.Api.Controllers.TestController.AddBook (LMS.Api)"'
+ 2023-10-05 12:56:52.812 +05:30 [Information] (Audit API///d13e9763-5e19-483d-a7a3-13750a3a9eba) Route matched with "{action = \"AddBook\", controller = \"Test\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddBook(LMS.Application.Features.BookManagement.Commands.AddBookCommand)" on controller "LMS.Api.Controllers.TestController" ("LMS.Api").
+ 2023-10-05 12:56:52.860 +05:30 [Information] (Audit API///) Executed action "LMS.Api.Controllers.TestController.AddBook (LMS.Api)" in 42.2686ms
+ 2023-10-05 12:56:52.864 +05:30 [Information] (Audit API///) Executed endpoint '"LMS.Api.Controllers.TestController.AddBook (LMS.Api)"'
+ 2023-10-05 12:56:52.866 +05:30 [Error] (Audit API///) An unhandled exception has occurred while executing the request.
+LMS.Domain.Exceptions.ValidationException: One or more validation errors occurred
+   at LMS.Application.PipeLineBehaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Application\PipeLineBehaviors\ValidationBehavior.cs:line 38
+   at LMS.Api.Controllers.TestController.AddBook(AddBookCommand command) in D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Api\Controllers\TestController.cs:line 16
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ 2023-10-05 12:56:52.880 +05:30 [Information] (Audit API///) Request finished HTTP/2 POST https://localhost:7145/api/books application/json 20 - 500 - text/plain;+charset=utf-8 89.3660ms
+ 2023-10-05 13:00:46.305 +05:30 [Information] (Audit API///) Starting up Api service...
+ 2023-10-05 13:00:47.541 +05:30 [Information] (Audit API///) Executed DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)"
+ 2023-10-05 13:00:47.602 +05:30 [Information] (Audit API///) Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)"
+ 2023-10-05 13:00:47.633 +05:30 [Information] (Audit API///) Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";"
+ 2023-10-05 13:00:47.657 +05:30 [Information] (Audit API///) No migrations were applied. The database is already up to date.
+ 2023-10-05 13:00:47.804 +05:30 [Information] (Audit API///) Now listening on: "https://localhost:7145"
+ 2023-10-05 13:00:47.805 +05:30 [Information] (Audit API///) Now listening on: "http://localhost:5001"
+ 2023-10-05 13:00:47.807 +05:30 [Information] (Audit API///) Application started. Press Ctrl+C to shut down.
+ 2023-10-05 13:00:47.808 +05:30 [Information] (Audit API///) Hosting environment: "Development"
+ 2023-10-05 13:00:47.809 +05:30 [Information] (Audit API///) Content root path: "D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Api"
+ 2023-10-05 13:00:48.492 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/swagger/index.html - -
+ 2023-10-05 13:00:48.658 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/swagger/index.html - - - 200 - text/html;charset=utf-8 168.0973ms
+ 2023-10-05 13:00:48.715 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/_vs/browserLink - -
+ 2023-10-05 13:00:48.715 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - -
+ 2023-10-05 13:00:48.721 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 5.6039ms
+ 2023-10-05 13:00:48.740 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.2636ms
+ 2023-10-05 13:00:49.181 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - -
+ 2023-10-05 13:00:49.250 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 69.2103ms
+ 2023-10-05 13:01:02.640 +05:30 [Information] (Audit API///) Request starting HTTP/2 POST https://localhost:7145/api/books application/json 20
+ 2023-10-05 13:01:02.647 +05:30 [Information] (Audit API///) Executing endpoint '"LMS.Api.Controllers.TestController.AddBook (LMS.Api)"'
+ 2023-10-05 13:01:02.678 +05:30 [Information] (Audit API///95c3f0e0-5c09-4cee-beb7-627d7f473d82) Route matched with "{action = \"AddBook\", controller = \"Test\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddBook(LMS.Application.Features.BookManagement.Commands.AddBookCommand)" on controller "LMS.Api.Controllers.TestController" ("LMS.Api").
+ 2023-10-05 13:01:02.764 +05:30 [Information] (Audit API///) Executed action "LMS.Api.Controllers.TestController.AddBook (LMS.Api)" in 77.2592ms
+ 2023-10-05 13:01:02.767 +05:30 [Information] (Audit API///) Executed endpoint '"LMS.Api.Controllers.TestController.AddBook (LMS.Api)"'
+ 2023-10-05 13:01:02.769 +05:30 [Error] (Audit API///) An unhandled exception has occurred while executing the request.
+LMS.Domain.Exceptions.ValidationException: One or more validation errors occurred
+   at LMS.Application.PipeLineBehaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Application\PipeLineBehaviors\ValidationBehavior.cs:line 38
+   at LMS.Api.Controllers.TestController.AddBook(AddBookCommand command) in D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Api\Controllers\TestController.cs:line 16
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ 2023-10-05 13:01:02.788 +05:30 [Information] (Audit API///) Request finished HTTP/2 POST https://localhost:7145/api/books application/json 20 - 500 - text/plain;+charset=utf-8 148.0010ms
+ 2023-10-05 13:01:20.994 +05:30 [Information] (Audit API///) Request starting HTTP/2 POST https://localhost:7145/api/books application/json 18
+ 2023-10-05 13:01:20.997 +05:30 [Information] (Audit API///) Executing endpoint '"LMS.Api.Controllers.TestController.AddBook (LMS.Api)"'
+ 2023-10-05 13:01:20.998 +05:30 [Information] (Audit API///95c3f0e0-5c09-4cee-beb7-627d7f473d82) Route matched with "{action = \"AddBook\", controller = \"Test\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddBook(LMS.Application.Features.BookManagement.Commands.AddBookCommand)" on controller "LMS.Api.Controllers.TestController" ("LMS.Api").
+ 2023-10-05 13:01:21.012 +05:30 [Information] (Audit API///95c3f0e0-5c09-4cee-beb7-627d7f473d82) Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+ 2023-10-05 13:01:21.017 +05:30 [Information] (Audit API///) Executed action "LMS.Api.Controllers.TestController.AddBook (LMS.Api)" in 16.8838ms
+ 2023-10-05 13:01:21.018 +05:30 [Information] (Audit API///) Executed endpoint '"LMS.Api.Controllers.TestController.AddBook (LMS.Api)"'
+ 2023-10-05 13:01:21.018 +05:30 [Information] (Audit API///) Request finished HTTP/2 POST https://localhost:7145/api/books application/json 18 - 400 - application/problem+json;+charset=utf-8 24.1064ms
+ 2023-10-05 13:06:13.281 +05:30 [Information] (Audit API///) Starting up Api service...
+ 2023-10-05 13:06:14.431 +05:30 [Information] (Audit API///) Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)"
+ 2023-10-05 13:06:14.498 +05:30 [Information] (Audit API///) Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)"
+ 2023-10-05 13:06:14.541 +05:30 [Information] (Audit API///) Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";"
+ 2023-10-05 13:06:14.573 +05:30 [Information] (Audit API///) No migrations were applied. The database is already up to date.
+ 2023-10-05 13:06:14.761 +05:30 [Information] (Audit API///) Now listening on: "https://localhost:7145"
+ 2023-10-05 13:06:14.766 +05:30 [Information] (Audit API///) Now listening on: "http://localhost:5001"
+ 2023-10-05 13:06:14.769 +05:30 [Information] (Audit API///) Application started. Press Ctrl+C to shut down.
+ 2023-10-05 13:06:14.770 +05:30 [Information] (Audit API///) Hosting environment: "Development"
+ 2023-10-05 13:06:14.771 +05:30 [Information] (Audit API///) Content root path: "D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Api"
+ 2023-10-05 13:06:15.307 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/swagger/index.html - -
+ 2023-10-05 13:06:15.481 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/swagger/index.html - - - 200 - text/html;charset=utf-8 175.1681ms
+ 2023-10-05 13:06:15.539 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - -
+ 2023-10-05 13:06:15.539 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/_vs/browserLink - -
+ 2023-10-05 13:06:15.545 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 6.2227ms
+ 2023-10-05 13:06:15.573 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 34.2698ms
+ 2023-10-05 13:06:16.038 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - -
+ 2023-10-05 13:06:16.138 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 99.5699ms
+ 2023-10-05 13:06:28.448 +05:30 [Information] (Audit API///) Request starting HTTP/2 POST https://localhost:7145/api/books application/json 26
+ 2023-10-05 13:06:28.455 +05:30 [Information] (Audit API///) Executing endpoint '"LMS.Api.Controllers.TestController.AddBook (LMS.Api)"'
+ 2023-10-05 13:06:28.478 +05:30 [Information] (Audit API///b1e45e80-ca15-4be3-81ef-9c4a39aad4e0) Route matched with "{action = \"AddBook\", controller = \"Test\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddBook(LMS.Application.Features.BookManagement.Commands.AddBookCommand)" on controller "LMS.Api.Controllers.TestController" ("LMS.Api").
+ 2023-10-05 13:06:28.552 +05:30 [Information] (Audit API///) Executed action "LMS.Api.Controllers.TestController.AddBook (LMS.Api)" in 67.8513ms
+ 2023-10-05 13:06:28.555 +05:30 [Information] (Audit API///) Executed endpoint '"LMS.Api.Controllers.TestController.AddBook (LMS.Api)"'
+ 2023-10-05 13:06:28.558 +05:30 [Error] (Audit API///) An unhandled exception has occurred while executing the request.
+LMS.Domain.Exceptions.ValidationException: One or more validation errors occurred
+   at LMS.Application.PipeLineBehaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Application\PipeLineBehaviors\ValidationBehavior.cs:line 38
+   at LMS.Api.Controllers.TestController.AddBook(AddBookCommand command) in D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Api\Controllers\TestController.cs:line 16
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ 2023-10-05 13:06:28.579 +05:30 [Information] (Audit API///) Request finished HTTP/2 POST https://localhost:7145/api/books application/json 26 - 500 - text/plain;+charset=utf-8 131.3462ms
+ 2023-10-05 13:06:46.008 +05:30 [Information] (Audit API///) Starting up Api service...
+ 2023-10-05 13:06:47.102 +05:30 [Information] (Audit API///) Executed DbCommand ("32"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)"
+ 2023-10-05 13:06:47.175 +05:30 [Information] (Audit API///) Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)"
+ 2023-10-05 13:06:47.222 +05:30 [Information] (Audit API///) Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";"
+ 2023-10-05 13:06:47.246 +05:30 [Information] (Audit API///) No migrations were applied. The database is already up to date.
+ 2023-10-05 13:06:47.439 +05:30 [Information] (Audit API///) Now listening on: "https://localhost:7145"
+ 2023-10-05 13:06:47.440 +05:30 [Information] (Audit API///) Now listening on: "http://localhost:5001"
+ 2023-10-05 13:06:47.443 +05:30 [Information] (Audit API///) Application started. Press Ctrl+C to shut down.
+ 2023-10-05 13:06:47.444 +05:30 [Information] (Audit API///) Hosting environment: "Development"
+ 2023-10-05 13:06:47.446 +05:30 [Information] (Audit API///) Content root path: "D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Api"
+ 2023-10-05 13:06:47.955 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/swagger/index.html - -
+ 2023-10-05 13:06:48.104 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/swagger/index.html - - - 200 - text/html;charset=utf-8 149.5905ms
+ 2023-10-05 13:06:48.153 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/_vs/browserLink - -
+ 2023-10-05 13:06:48.153 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - -
+ 2023-10-05 13:06:48.161 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 7.3147ms
+ 2023-10-05 13:06:48.181 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.3778ms
+ 2023-10-05 13:06:48.653 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - -
+ 2023-10-05 13:06:48.732 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 79.4627ms
+ 2023-10-05 13:06:55.661 +05:30 [Information] (Audit API///) Request starting HTTP/2 POST https://localhost:7145/api/books application/json 26
+ 2023-10-05 13:06:55.666 +05:30 [Information] (Audit API///) Executing endpoint '"LMS.Api.Controllers.TestController.AddBook (LMS.Api)"'
+ 2023-10-05 13:06:55.684 +05:30 [Information] (Audit API///310b0224-9f78-4f62-ad90-23408ee8bea8) Route matched with "{action = \"AddBook\", controller = \"Test\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddBook(LMS.Application.Features.BookManagement.Commands.AddBookCommand)" on controller "LMS.Api.Controllers.TestController" ("LMS.Api").
+ 2023-10-05 13:06:55.898 +05:30 [Information] (Audit API///310b0224-9f78-4f62-ad90-23408ee8bea8) Executed DbCommand ("14"ms) [Parameters=["@p0='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"Books\" (\"Name\")
+VALUES (@p0)
+RETURNING \"Id\";"
+ 2023-10-05 13:06:55.927 +05:30 [Information] (Audit API///310b0224-9f78-4f62-ad90-23408ee8bea8) Executing "OkObjectResult", writing value of type '"System.Int64"'.
+ 2023-10-05 13:06:55.943 +05:30 [Information] (Audit API///) Executed action "LMS.Api.Controllers.TestController.AddBook (LMS.Api)" in 252.4108ms
+ 2023-10-05 13:06:55.945 +05:30 [Information] (Audit API///) Executed endpoint '"LMS.Api.Controllers.TestController.AddBook (LMS.Api)"'
+ 2023-10-05 13:06:55.955 +05:30 [Information] (Audit API///) Request finished HTTP/2 POST https://localhost:7145/api/books application/json 26 - 200 - application/json;+charset=utf-8 293.4206ms
+ 2023-10-05 13:07:05.271 +05:30 [Information] (Audit API///) Starting up Api service...
+ 2023-10-05 13:07:06.176 +05:30 [Information] (Audit API///) Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)"
+ 2023-10-05 13:07:06.239 +05:30 [Information] (Audit API///) Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)"
+ 2023-10-05 13:07:06.268 +05:30 [Information] (Audit API///) Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";"
+ 2023-10-05 13:07:06.292 +05:30 [Information] (Audit API///) No migrations were applied. The database is already up to date.
+ 2023-10-05 13:07:06.432 +05:30 [Information] (Audit API///) Now listening on: "https://localhost:7145"
+ 2023-10-05 13:07:06.434 +05:30 [Information] (Audit API///) Now listening on: "http://localhost:5001"
+ 2023-10-05 13:07:06.437 +05:30 [Information] (Audit API///) Application started. Press Ctrl+C to shut down.
+ 2023-10-05 13:07:06.439 +05:30 [Information] (Audit API///) Hosting environment: "Development"
+ 2023-10-05 13:07:06.440 +05:30 [Information] (Audit API///) Content root path: "D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Api"
+ 2023-10-05 13:07:06.759 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/swagger/index.html - -
+ 2023-10-05 13:07:06.931 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/swagger/index.html - - - 200 - text/html;charset=utf-8 172.8398ms
+ 2023-10-05 13:07:06.975 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - -
+ 2023-10-05 13:07:06.975 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/_vs/browserLink - -
+ 2023-10-05 13:07:06.981 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 5.6320ms
+ 2023-10-05 13:07:06.998 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.2112ms
+ 2023-10-05 13:07:07.466 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - -
+ 2023-10-05 13:07:07.536 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 70.3474ms
+ 2023-10-05 13:07:30.839 +05:30 [Information] (Audit API///) Starting up Api service...
+ 2023-10-05 13:07:32.053 +05:30 [Information] (Audit API///) Executed DbCommand ("32"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)"
+ 2023-10-05 13:07:32.112 +05:30 [Information] (Audit API///) Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)"
+ 2023-10-05 13:07:32.141 +05:30 [Information] (Audit API///) Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";"
+ 2023-10-05 13:07:32.164 +05:30 [Information] (Audit API///) No migrations were applied. The database is already up to date.
+ 2023-10-05 13:07:32.322 +05:30 [Information] (Audit API///) Now listening on: "https://localhost:7145"
+ 2023-10-05 13:07:32.323 +05:30 [Information] (Audit API///) Now listening on: "http://localhost:5001"
+ 2023-10-05 13:07:32.325 +05:30 [Information] (Audit API///) Application started. Press Ctrl+C to shut down.
+ 2023-10-05 13:07:32.325 +05:30 [Information] (Audit API///) Hosting environment: "Development"
+ 2023-10-05 13:07:32.326 +05:30 [Information] (Audit API///) Content root path: "D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Api"
+ 2023-10-05 13:07:32.891 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/swagger/index.html - -
+ 2023-10-05 13:07:33.030 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/swagger/index.html - - - 200 - text/html;charset=utf-8 139.9800ms
+ 2023-10-05 13:07:33.084 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - -
+ 2023-10-05 13:07:33.084 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/_vs/browserLink - -
+ 2023-10-05 13:07:33.089 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 4.9157ms
+ 2023-10-05 13:07:33.104 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.9775ms
+ 2023-10-05 13:07:33.575 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - -
+ 2023-10-05 13:07:33.644 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 69.2537ms
+ 2023-10-05 13:07:39.028 +05:30 [Information] (Audit API///) Request starting HTTP/2 POST https://localhost:7145/api/books application/json 26
+ 2023-10-05 13:07:39.036 +05:30 [Information] (Audit API///) Executing endpoint '"LMS.Api.Controllers.TestController.AddBook (LMS.Api)"'
+ 2023-10-05 13:07:39.064 +05:30 [Information] (Audit API///514add40-06d4-4ff9-b498-46358c2716aa) Route matched with "{action = \"AddBook\", controller = \"Test\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddBook(LMS.Application.Features.BookManagement.Commands.AddBookCommand)" on controller "LMS.Api.Controllers.TestController" ("LMS.Api").
+ 2023-10-05 13:07:39.179 +05:30 [Information] (Audit API///) Executed action "LMS.Api.Controllers.TestController.AddBook (LMS.Api)" in 103.1991ms
+ 2023-10-05 13:07:39.181 +05:30 [Information] (Audit API///) Executed endpoint '"LMS.Api.Controllers.TestController.AddBook (LMS.Api)"'
+ 2023-10-05 13:07:39.184 +05:30 [Error] (Audit API///) An unhandled exception has occurred while executing the request.
+LMS.Domain.Exceptions.ValidationException: One or more validation errors occurred
+   at LMS.Application.PipeLineBehaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Application\PipeLineBehaviors\ValidationBehavior.cs:line 38
+   at LMS.Api.Controllers.TestController.AddBook(AddBookCommand command) in D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Api\Controllers\TestController.cs:line 16
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ 2023-10-05 13:07:39.205 +05:30 [Information] (Audit API///) Request finished HTTP/2 POST https://localhost:7145/api/books application/json 26 - 500 - text/plain;+charset=utf-8 176.9605ms
+ 2023-10-05 13:09:20.848 +05:30 [Information] (Audit API///) Starting up Api service...
+ 2023-10-05 13:09:21.840 +05:30 [Information] (Audit API///) Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)"
+ 2023-10-05 13:09:21.894 +05:30 [Information] (Audit API///) Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)"
+ 2023-10-05 13:09:21.921 +05:30 [Information] (Audit API///) Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";"
+ 2023-10-05 13:09:21.940 +05:30 [Information] (Audit API///) No migrations were applied. The database is already up to date.
+ 2023-10-05 13:09:22.089 +05:30 [Information] (Audit API///) Now listening on: "https://localhost:7145"
+ 2023-10-05 13:09:22.091 +05:30 [Information] (Audit API///) Now listening on: "http://localhost:5001"
+ 2023-10-05 13:09:22.094 +05:30 [Information] (Audit API///) Application started. Press Ctrl+C to shut down.
+ 2023-10-05 13:09:22.096 +05:30 [Information] (Audit API///) Hosting environment: "Development"
+ 2023-10-05 13:09:22.097 +05:30 [Information] (Audit API///) Content root path: "D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Api"
+ 2023-10-05 13:09:22.314 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/swagger/index.html - -
+ 2023-10-05 13:09:22.500 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/swagger/index.html - - - 200 - text/html;charset=utf-8 188.9077ms
+ 2023-10-05 13:09:22.564 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - -
+ 2023-10-05 13:09:22.564 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/_vs/browserLink - -
+ 2023-10-05 13:09:22.569 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 5.0989ms
+ 2023-10-05 13:09:22.590 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.8491ms
+ 2023-10-05 13:09:23.047 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - -
+ 2023-10-05 13:09:23.111 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 63.5772ms
+ 2023-10-05 13:09:33.018 +05:30 [Information] (Audit API///) Request starting HTTP/2 POST https://localhost:7145/api/books application/json 26
+ 2023-10-05 13:09:33.023 +05:30 [Information] (Audit API///) Executing endpoint '"LMS.Api.Controllers.TestController.AddBook (LMS.Api)"'
+ 2023-10-05 13:09:33.041 +05:30 [Information] (Audit API///cee634fb-12a6-4fb7-ac2d-ee175a904d80) Route matched with "{action = \"AddBook\", controller = \"Test\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddBook(LMS.Application.Features.BookManagement.Commands.AddBookCommand)" on controller "LMS.Api.Controllers.TestController" ("LMS.Api").
+ 2023-10-05 13:09:33.146 +05:30 [Information] (Audit API///) Executed action "LMS.Api.Controllers.TestController.AddBook (LMS.Api)" in 95.9301ms
+ 2023-10-05 13:09:33.150 +05:30 [Information] (Audit API///) Executed endpoint '"LMS.Api.Controllers.TestController.AddBook (LMS.Api)"'
+ 2023-10-05 13:09:33.153 +05:30 [Error] (Audit API///) An unhandled exception has occurred while executing the request.
+LMS.Domain.Exceptions.ValidationException: One or more validation errors occurred
+   at LMS.Application.PipeLineBehaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Application\PipeLineBehaviors\ValidationBehavior.cs:line 38
+   at LMS.Api.Controllers.TestController.AddBook(AddBookCommand command) in D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Api\Controllers\TestController.cs:line 16
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ 2023-10-05 13:09:33.181 +05:30 [Information] (Audit API///) Request finished HTTP/2 POST https://localhost:7145/api/books application/json 26 - 500 - text/plain;+charset=utf-8 163.1335ms
+ 2023-10-05 13:12:56.378 +05:30 [Information] (Audit API///) Starting up Api service...
+ 2023-10-05 13:12:57.619 +05:30 [Information] (Audit API///) Executed DbCommand ("35"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)"
+ 2023-10-05 13:12:57.678 +05:30 [Information] (Audit API///) Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)"
+ 2023-10-05 13:12:57.708 +05:30 [Information] (Audit API///) Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";"
+ 2023-10-05 13:12:57.728 +05:30 [Information] (Audit API///) No migrations were applied. The database is already up to date.
+ 2023-10-05 13:12:57.873 +05:30 [Information] (Audit API///) Now listening on: "https://localhost:7145"
+ 2023-10-05 13:12:57.876 +05:30 [Information] (Audit API///) Now listening on: "http://localhost:5001"
+ 2023-10-05 13:12:57.878 +05:30 [Information] (Audit API///) Application started. Press Ctrl+C to shut down.
+ 2023-10-05 13:12:57.880 +05:30 [Information] (Audit API///) Hosting environment: "Development"
+ 2023-10-05 13:12:57.880 +05:30 [Information] (Audit API///) Content root path: "D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Api"
+ 2023-10-05 13:12:58.336 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/swagger/index.html - -
+ 2023-10-05 13:12:58.486 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/swagger/index.html - - - 200 - text/html;charset=utf-8 151.1441ms
+ 2023-10-05 13:12:58.542 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/_vs/browserLink - -
+ 2023-10-05 13:12:58.542 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - -
+ 2023-10-05 13:12:58.557 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 15.0328ms
+ 2023-10-05 13:12:58.569 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.0236ms
+ 2023-10-05 13:12:59.330 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - -
+ 2023-10-05 13:12:59.458 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 128.0160ms
+ 2023-10-05 13:13:24.706 +05:30 [Information] (Audit API///) Request starting HTTP/2 POST https://localhost:7145/api/books application/json 26
+ 2023-10-05 13:13:24.714 +05:30 [Information] (Audit API///) Executing endpoint '"LMS.Api.Controllers.TestController.AddBook (LMS.Api)"'
+ 2023-10-05 13:13:24.733 +05:30 [Information] (Audit API///91b63456-3127-441f-8feb-3d338d0ba353) Route matched with "{action = \"AddBook\", controller = \"Test\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddBook(LMS.Application.Features.BookManagement.Commands.AddBookCommand)" on controller "LMS.Api.Controllers.TestController" ("LMS.Api").
+ 2023-10-05 13:13:24.823 +05:30 [Information] (Audit API///) Executed action "LMS.Api.Controllers.TestController.AddBook (LMS.Api)" in 81.1972ms
+ 2023-10-05 13:13:24.827 +05:30 [Information] (Audit API///) Executed endpoint '"LMS.Api.Controllers.TestController.AddBook (LMS.Api)"'
+ 2023-10-05 13:13:24.830 +05:30 [Error] (Audit API///) An unhandled exception has occurred while executing the request.
+LMS.Domain.Exceptions.ValidationException: One or more validation errors occurred
+   at LMS.Application.PipeLineBehaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Application\PipeLineBehaviors\ValidationBehavior.cs:line 38
+   at LMS.Api.Controllers.TestController.AddBook(AddBookCommand command) in D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Api\Controllers\TestController.cs:line 16
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ 2023-10-05 13:13:24.853 +05:30 [Information] (Audit API///) Request finished HTTP/2 POST https://localhost:7145/api/books application/json 26 - 500 - text/plain;+charset=utf-8 146.4816ms
+ 2023-10-05 13:14:41.802 +05:30 [Information] (Audit API///) Starting up Api service...
+ 2023-10-05 13:14:46.008 +05:30 [Information] (Audit API///) Executed DbCommand ("38"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)"
+ 2023-10-05 13:14:46.076 +05:30 [Information] (Audit API///) Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)"
+ 2023-10-05 13:14:46.112 +05:30 [Information] (Audit API///) Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";"
+ 2023-10-05 13:14:46.133 +05:30 [Information] (Audit API///) No migrations were applied. The database is already up to date.
+ 2023-10-05 13:14:46.482 +05:30 [Information] (Audit API///) Now listening on: "https://localhost:7145"
+ 2023-10-05 13:14:46.484 +05:30 [Information] (Audit API///) Now listening on: "http://localhost:5001"
+ 2023-10-05 13:14:46.487 +05:30 [Information] (Audit API///) Application started. Press Ctrl+C to shut down.
+ 2023-10-05 13:14:46.488 +05:30 [Information] (Audit API///) Hosting environment: "Development"
+ 2023-10-05 13:14:46.490 +05:30 [Information] (Audit API///) Content root path: "D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Api"
+ 2023-10-05 13:14:47.432 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/swagger/index.html - -
+ 2023-10-05 13:14:47.702 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/swagger/index.html - - - 200 - text/html;charset=utf-8 269.8406ms
+ 2023-10-05 13:14:47.818 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - -
+ 2023-10-05 13:14:47.818 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/_vs/browserLink - -
+ 2023-10-05 13:14:47.840 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 21.3515ms
+ 2023-10-05 13:14:47.889 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 70.4648ms
+ 2023-10-05 13:14:48.026 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - -
+ 2023-10-05 13:14:48.148 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 122.9026ms
+ 2023-10-05 13:14:52.386 +05:30 [Information] (Audit API///) Request starting HTTP/2 POST https://localhost:7145/api/books application/json 26
+ 2023-10-05 13:14:52.396 +05:30 [Information] (Audit API///) Executing endpoint '"LMS.Api.Controllers.TestController.AddBook (LMS.Api)"'
+ 2023-10-05 13:14:52.430 +05:30 [Information] (Audit API///2656c157-e95d-4ec6-a16d-31b494ace236) Route matched with "{action = \"AddBook\", controller = \"Test\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddBook(LMS.Application.Features.BookManagement.Commands.AddBookCommand)" on controller "LMS.Api.Controllers.TestController" ("LMS.Api").
+ 2023-10-05 13:14:52.718 +05:30 [Information] (Audit API///) Executed action "LMS.Api.Controllers.TestController.AddBook (LMS.Api)" in 278.3817ms
+ 2023-10-05 13:14:52.722 +05:30 [Information] (Audit API///) Executed endpoint '"LMS.Api.Controllers.TestController.AddBook (LMS.Api)"'
+ 2023-10-05 13:14:52.725 +05:30 [Error] (Audit API///) An unhandled exception has occurred while executing the request.
+LMS.Domain.Exceptions.ValidationException: One or more validation errors occurred
+   at LMS.Application.PipeLineBehaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Application\PipeLineBehaviors\ValidationBehavior.cs:line 38
+   at LMS.Api.Controllers.TestController.AddBook(AddBookCommand command) in D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Api\Controllers\TestController.cs:line 16
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ 2023-10-05 13:14:52.765 +05:30 [Information] (Audit API///) Request finished HTTP/2 POST https://localhost:7145/api/books application/json 26 - 500 - text/plain;+charset=utf-8 379.3012ms
+ 2023-10-05 14:31:19.538 +05:30 [Information] (Audit API///) Starting up Api service...
+ 2023-10-05 14:31:20.780 +05:30 [Information] (Audit API///) Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)"
+ 2023-10-05 14:31:20.841 +05:30 [Information] (Audit API///) Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)"
+ 2023-10-05 14:31:20.873 +05:30 [Information] (Audit API///) Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";"
+ 2023-10-05 14:31:20.891 +05:30 [Information] (Audit API///) No migrations were applied. The database is already up to date.
+ 2023-10-05 14:31:21.118 +05:30 [Information] (Audit API///) Now listening on: "https://localhost:7145"
+ 2023-10-05 14:31:21.119 +05:30 [Information] (Audit API///) Now listening on: "http://localhost:5001"
+ 2023-10-05 14:31:21.121 +05:30 [Information] (Audit API///) Application started. Press Ctrl+C to shut down.
+ 2023-10-05 14:31:21.122 +05:30 [Information] (Audit API///) Hosting environment: "Development"
+ 2023-10-05 14:31:21.123 +05:30 [Information] (Audit API///) Content root path: "D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Api"
+ 2023-10-05 14:31:22.159 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/swagger/index.html - -
+ 2023-10-05 14:31:22.383 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/swagger/index.html - - - 200 - text/html;charset=utf-8 226.0176ms
+ 2023-10-05 14:31:22.423 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/swagger/swagger-ui.css - -
+ 2023-10-05 14:31:22.443 +05:30 [Information] (Audit API///) Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+ 2023-10-05 14:31:22.445 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/swagger/swagger-ui.css - - - 0 144929 text/css 22.2158ms
+ 2023-10-05 14:31:22.557 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/_vs/browserLink - -
+ 2023-10-05 14:31:22.619 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - -
+ 2023-10-05 14:31:22.659 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 39.4257ms
+ 2023-10-05 14:31:22.706 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 148.6531ms
+ 2023-10-05 14:31:22.880 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - -
+ 2023-10-05 14:31:23.009 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 128.6634ms
+ 2023-10-05 14:31:26.946 +05:30 [Information] (Audit API///) Request starting HTTP/2 POST https://localhost:7145/api/books application/json 26
+ 2023-10-05 14:31:26.951 +05:30 [Error] (Audit API///) An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'LMS.Api.MiddleWares.ExceptionHandlingMiddleWare' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Http.MiddlewareFactory.Create(Type middlewareType)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ 2023-10-05 14:31:26.978 +05:30 [Information] (Audit API///) Request finished HTTP/2 POST https://localhost:7145/api/books application/json 26 - 500 - text/plain;+charset=utf-8 32.2465ms
+ 2023-10-05 14:31:50.558 +05:30 [Information] (Audit API///) Starting up Api service...
+ 2023-10-05 14:31:51.609 +05:30 [Information] (Audit API///) Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)"
+ 2023-10-05 14:31:51.666 +05:30 [Information] (Audit API///) Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)"
+ 2023-10-05 14:31:51.703 +05:30 [Information] (Audit API///) Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";"
+ 2023-10-05 14:31:51.730 +05:30 [Information] (Audit API///) No migrations were applied. The database is already up to date.
+ 2023-10-05 14:31:51.889 +05:30 [Information] (Audit API///) Now listening on: "https://localhost:7145"
+ 2023-10-05 14:31:51.891 +05:30 [Information] (Audit API///) Now listening on: "http://localhost:5001"
+ 2023-10-05 14:31:51.895 +05:30 [Information] (Audit API///) Application started. Press Ctrl+C to shut down.
+ 2023-10-05 14:31:51.896 +05:30 [Information] (Audit API///) Hosting environment: "Development"
+ 2023-10-05 14:31:51.897 +05:30 [Information] (Audit API///) Content root path: "D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Api"
+ 2023-10-05 14:31:52.043 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/swagger/index.html - -
+ 2023-10-05 14:31:52.285 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/swagger/index.html - - - 200 - text/html;charset=utf-8 245.4453ms
+ 2023-10-05 14:31:52.343 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - -
+ 2023-10-05 14:31:52.343 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/_vs/browserLink - -
+ 2023-10-05 14:31:52.351 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 7.9674ms
+ 2023-10-05 14:31:52.381 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.0093ms
+ 2023-10-05 14:31:52.529 +05:30 [Information] (Audit API///) Request starting HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - -
+ 2023-10-05 14:31:52.612 +05:30 [Information] (Audit API///) Request finished HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 82.9566ms
+ 2023-10-05 14:31:56.364 +05:30 [Information] (Audit API///) Request starting HTTP/2 POST https://localhost:7145/api/books application/json 26
+ 2023-10-05 14:31:56.377 +05:30 [Information] (Audit API///) Executing endpoint '"LMS.Api.Controllers.TestController.AddBook (LMS.Api)"'
+ 2023-10-05 14:31:56.403 +05:30 [Information] (Audit API///da2fa6cc-9d2b-4ad4-a793-0ca3176a03b1) Route matched with "{action = \"AddBook\", controller = \"Test\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddBook(LMS.Application.Features.BookManagement.Commands.AddBookCommand)" on controller "LMS.Api.Controllers.TestController" ("LMS.Api").
+ 2023-10-05 14:31:56.483 +05:30 [Information] (Audit API///) Executed action "LMS.Api.Controllers.TestController.AddBook (LMS.Api)" in 74.8386ms
+ 2023-10-05 14:31:56.488 +05:30 [Information] (Audit API///) Executed endpoint '"LMS.Api.Controllers.TestController.AddBook (LMS.Api)"'
+ 2023-10-05 14:31:56.489 +05:30 [Error] (Audit API///) One or more validation errors occurred
+LMS.Domain.Exceptions.ValidationException: One or more validation errors occurred
+   at LMS.Application.PipeLineBehaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Application\PipeLineBehaviors\ValidationBehavior.cs:line 38
+   at LMS.Api.Controllers.TestController.AddBook(AddBookCommand command) in D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Api\Controllers\TestController.cs:line 16
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at LMS.Api.MiddleWares.ExceptionHandlingMiddleWare.InvokeAsync(HttpContext context, RequestDelegate next) in D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Api\MiddleWares\ExceptionHandlingMiddleWare.cs:line 17
+ 2023-10-05 14:31:56.512 +05:30 [Information] (Audit API///) handling error e
+LMS.Domain.Exceptions.ValidationException: One or more validation errors occurred
+   at LMS.Application.PipeLineBehaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Application\PipeLineBehaviors\ValidationBehavior.cs:line 38
+   at LMS.Api.Controllers.TestController.AddBook(AddBookCommand command) in D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Api\Controllers\TestController.cs:line 16
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at LMS.Api.MiddleWares.ExceptionHandlingMiddleWare.InvokeAsync(HttpContext context, RequestDelegate next) in D:\Projects\LibraryManagementSystem\ApiServices\LMS\LMS.Api\MiddleWares\ExceptionHandlingMiddleWare.cs:line 17
+ 2023-10-05 14:31:56.521 +05:30 [Information] (Audit API///) Request finished HTTP/2 POST https://localhost:7145/api/books application/json 26 - 422 - application/json 157.2597ms
  

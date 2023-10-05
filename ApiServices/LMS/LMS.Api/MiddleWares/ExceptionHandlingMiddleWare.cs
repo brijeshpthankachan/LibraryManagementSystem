@@ -4,7 +4,7 @@ using ApplicationException = LMS.Domain.Exceptions.ApplicationException;
 
 namespace LMS.Api.MiddleWares;
 
-internal sealed class ExceptionHandlingMiddleWare : IMiddleware
+public sealed class ExceptionHandlingMiddleWare : IMiddleware
 {
     private readonly ILogger<ExceptionHandlingMiddleWare> _logger;
 
@@ -18,8 +18,7 @@ internal sealed class ExceptionHandlingMiddleWare : IMiddleware
         }
         catch (Exception e)
         {
-            _logger.LogError(e, e.Message);
-
+            _logger.LogError("handling error", e);
             await HandleExceptionAsync(context, e);
         }
     }
@@ -46,8 +45,8 @@ internal sealed class ExceptionHandlingMiddleWare : IMiddleware
     private static int GetStatusCode(Exception exception) =>
         exception switch
         {
-            //BadRequestException => StatusCodes.Status400BadRequest,
-            //NotFoundException => StatusCodes.Status404NotFound,
+            BadRequestException => StatusCodes.Status400BadRequest,
+            NotFoundException => StatusCodes.Status404NotFound,
             ValidationException => StatusCodes.Status422UnprocessableEntity,
             _ => StatusCodes.Status500InternalServerError
         };
