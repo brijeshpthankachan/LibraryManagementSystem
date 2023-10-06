@@ -2,14 +2,13 @@ import { CommonModule } from '@angular/common'
 import { Component } from '@angular/core'
 import { RouterOutlet } from '@angular/router'
 import { TranslateModule, TranslateService } from '@ngx-translate/core'
-import { MainLayoutComponent } from './layout/main-layout.component'
 
 @Component({
 	selector: 'app-root',
 	standalone: true,
 	templateUrl: './app.component.html',
 	styleUrls: ['./app.component.scss'],
-	imports: [CommonModule, RouterOutlet, TranslateModule, MainLayoutComponent]
+	imports: [CommonModule, RouterOutlet, TranslateModule]
 })
 export class AppComponent {
 	title = 'lms-admin-ui'
