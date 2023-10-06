@@ -3,21 +3,28 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "lmsUi": {
+    "lms-admin-ui": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "standalone": true
+        },
+        "@schematics/angular:directive": {
+          "standalone": true
+        },
+        "@schematics/angular:pipe": {
+          "standalone": true
         }
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "lms",
+      "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/lms-ui-admin",
+            "outputPath": "dist/lms-admin-ui",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -65,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "lmsUi:build:production"
+              "browserTarget": "lms-admin-ui:build:production"
             },
             "development": {
-              "browserTarget": "lmsUi:build:development"
+              "browserTarget": "lms-admin-ui:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "lmsUi:build"
+            "browserTarget": "lms-admin-ui:build"
           }
         },
         "test": {
