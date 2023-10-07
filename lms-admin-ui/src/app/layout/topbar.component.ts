@@ -11,14 +11,9 @@ import { LayoutService } from "./service/app.layout.service"
     imports: [CommonModule, RouterLink]
 })
 export class TopBarComponent {
-
     items!: MenuItem[]
-
     @ViewChild('menubutton') menuButton!: ElementRef
-
     @ViewChild('topbarmenubutton') topbarMenuButton!: ElementRef
-
     @ViewChild('topbarmenu') menu!: ElementRef
-
     constructor(public layoutService: LayoutService) { }
 }
