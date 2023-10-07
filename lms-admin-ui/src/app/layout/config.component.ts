@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common'
-import { Component, Input } from '@angular/core'
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core'
 import { FormsModule } from '@angular/forms'
 import { ButtonModule } from 'primeng/button'
 import { InputSwitchModule } from 'primeng/inputswitch'
@@ -19,7 +19,8 @@ import { MenuService } from './service/menu.service'
         RadioButtonModule,
         ButtonModule,
         InputSwitchModule
-    ]
+    ],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ConfigComponent {
     @Input() minimal: boolean = false

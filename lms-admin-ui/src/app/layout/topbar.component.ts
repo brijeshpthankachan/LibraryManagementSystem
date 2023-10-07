@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common'
-import { Component, ElementRef, ViewChild } from '@angular/core'
+import { ChangeDetectionStrategy, Component, ElementRef, ViewChild } from '@angular/core'
 import { RouterLink } from '@angular/router'
 import { MenuItem } from 'primeng/api'
 import { LayoutService } from "./service/app.layout.service"
@@ -8,7 +8,8 @@ import { LayoutService } from "./service/app.layout.service"
     selector: 'app-topbar',
     templateUrl: './topbar.component.html',
     standalone: true,
-    imports: [CommonModule, RouterLink]
+    imports: [CommonModule, RouterLink],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TopBarComponent {
     items!: MenuItem[]
