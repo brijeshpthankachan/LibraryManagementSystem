@@ -1,17 +1,17 @@
 import { CommonModule } from '@angular/common'
 import { Component, OnInit } from '@angular/core'
 import { MenuModule } from 'primeng/menu'
-import { AppMenuitemComponent } from './app.menuitem.component'
+import { MenuitemComponent } from './menuitem.component'
 import { LayoutService } from './service/app.layout.service'
 
 
 @Component({
     selector: 'app-menu',
-    templateUrl: './app.menu.component.html',
+    templateUrl: './menu.component.html',
     standalone: true,
-    imports: [MenuModule, AppMenuitemComponent, CommonModule]
+    imports: [MenuModule, MenuitemComponent, CommonModule]
 })
-export class AppMenuComponent implements OnInit {
+export class MenuComponent implements OnInit {
 
     model: any[] = [];
 

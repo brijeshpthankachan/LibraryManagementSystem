@@ -4,8 +4,8 @@ import { ChangeDetectorRef, Component, HostBinding, Input, OnDestroy, OnInit } f
 import { NavigationEnd, Router, RouterLink, RouterLinkActive } from '@angular/router'
 import { Subscription } from 'rxjs'
 import { filter } from 'rxjs/operators'
-import { MenuService } from './app.menu.service'
 import { LayoutService } from './service/app.layout.service'
+import { MenuService } from './service/menu.service'
 
 @Component({
     selector: '[app-menuitem]',
@@ -49,7 +49,7 @@ import { LayoutService } from './service/app.layout.service'
         ])
     ]
 })
-export class AppMenuitemComponent implements OnInit, OnDestroy {
+export class MenuitemComponent implements OnInit, OnDestroy {
 
     @Input() item: any
 

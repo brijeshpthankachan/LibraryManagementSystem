@@ -6,11 +6,11 @@ import { LayoutService } from "./service/app.layout.service"
 
 @Component({
     selector: 'app-topbar',
-    templateUrl: './app.topbar.component.html',
+    templateUrl: './topbar.component.html',
     standalone: true,
     imports: [CommonModule, RouterLink]
 })
-export class AppTopBarComponent {
+export class TopBarComponent {
 
     items!: MenuItem[]
 

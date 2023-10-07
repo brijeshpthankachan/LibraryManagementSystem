@@ -3,10 +3,10 @@ import { LayoutService } from "./service/app.layout.service"
 
 @Component({
     selector: 'app-footer',
-    templateUrl: './app.footer.component.html',
+    templateUrl: './footer.component.html',
     standalone: true,
     imports: []
 })
-export class AppFooterComponent {
+export class FooterComponent {
     constructor(public layoutService: LayoutService) { }
 }

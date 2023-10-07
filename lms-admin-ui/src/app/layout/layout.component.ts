@@ -2,19 +2,19 @@ import { CommonModule } from '@angular/common'
 import { Component, OnDestroy, Renderer2, ViewChild } from '@angular/core'
 import { NavigationEnd, Router, RouterLink, RouterOutlet } from '@angular/router'
 import { Subscription, filter } from 'rxjs'
-import { AppFooterComponent } from "./app.footer.component"
-import { AppSidebarComponent } from "./app.sidebar.component"
-import { AppTopBarComponent } from './app.topbar.component'
-import { AppConfigComponent } from "./config/app.config.component"
+import { ConfigComponent } from './config.component'
+import { FooterComponent } from "./footer.component"
 import { LayoutService } from "./service/app.layout.service"
+import { SidebarComponent } from "./sidebar.component"
+import { TopBarComponent } from './topbar.component'
 
 @Component({
     selector: 'app-layout',
-    templateUrl: './app.layout.component.html',
+    templateUrl: './layout.component.html',
     standalone: true,
-    imports: [CommonModule, RouterLink, RouterOutlet, AppSidebarComponent, AppFooterComponent, AppConfigComponent, AppTopBarComponent]
+    imports: [CommonModule, RouterLink, RouterOutlet, SidebarComponent, FooterComponent, ConfigComponent, TopBarComponent]
 })
-export class AppLayoutComponent implements OnDestroy {
+export class LayoutComponent implements OnDestroy {
 
     overlayMenuOpenSubscription: Subscription
 
@@ -22,9 +22,9 @@ export class AppLayoutComponent implements OnDestroy {
 
     profileMenuOutsideClickListener: any
 
-    @ViewChild(AppSidebarComponent) appSidebar!: AppSidebarComponent
+    @ViewChild(SidebarComponent) appSidebar!: SidebarComponent
 
-    @ViewChild(AppTopBarComponent) appTopbar!: AppTopBarComponent
+    @ViewChild(TopBarComponent) appTopbar!: TopBarComponent
 
     constructor(public layoutService: LayoutService, public renderer: Renderer2, public router: Router) {
         this.overlayMenuOpenSubscription = this.layoutService.overlayOpen$.subscribe(() => {

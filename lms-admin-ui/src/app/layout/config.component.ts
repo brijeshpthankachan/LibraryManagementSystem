@@ -5,22 +5,31 @@ import { ButtonModule } from 'primeng/button'
 import { InputSwitchModule } from 'primeng/inputswitch'
 import { RadioButtonModule } from 'primeng/radiobutton'
 import { SidebarModule } from 'primeng/sidebar'
-import { MenuService } from "../app.menu.service"
-import { LayoutService } from "../service/app.layout.service"
+import { LayoutService } from './service/app.layout.service'
+import { MenuService } from './service/menu.service'
 
 @Component({
     selector: 'app-config',
-    templateUrl: './app.config.component.html',
+    templateUrl: './config.component.html',
     standalone: true,
-    imports: [CommonModule, FormsModule, SidebarModule, RadioButtonModule, ButtonModule, InputSwitchModule]
+    imports: [
+        CommonModule,
+        FormsModule,
+        SidebarModule,
+        RadioButtonModule,
+        ButtonModule,
+        InputSwitchModule
+    ]
 })
-export class AppConfigComponent {
+export class ConfigComponent {
+    @Input() minimal: boolean = false
 
-    @Input() minimal: boolean = false;
+    scales: number[] = [12, 13, 14, 15, 16]
 
-    scales: number[] = [12, 13, 14, 15, 16];
-
-    constructor(public layoutService: LayoutService, public menuService: MenuService) { }
+    constructor(
+        public layoutService: LayoutService,
+        public menuService: MenuService
+    ) { }
 
     get visible(): boolean {
         return this.layoutService.state.configSidebarVisible
@@ -67,10 +76,12 @@ export class AppConfigComponent {
     }
 
     changeTheme(theme: string, colorScheme: string) {
-        console.log("tryig to change theme")
+        console.log('tryig to change theme')
 
         const themeLink = <HTMLLinkElement>document.getElementById('theme-css')
-        const newHref = themeLink.getAttribute('href')!.replace(this.layoutService.config.theme, theme)
+        const newHref = themeLink
+            .getAttribute('href')!
+            .replace(this.layoutService.config.theme, theme)
         this.layoutService.config.colorScheme
         this.replaceThemeLink(newHref, () => {
             this.layoutService.config.theme = theme
@@ -110,10 +121,3 @@ export class AppConfigComponent {
         document.documentElement.style.fontSize = this.scale + 'px'
     }
 }
-
-// CommonModule,
-// FormsModule,
-// SidebarModule,
-// RadioButtonModule,
-// ButtonModule,
-// InputSwitchModule

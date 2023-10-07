@@ -1,6 +1,6 @@
-import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
-import { MenuChangeEvent } from './api/menuchangeevent';
+import { Injectable } from '@angular/core'
+import { Subject } from 'rxjs'
+import { MenuChangeEvent } from '../models/menuchangeevent'
 
 @Injectable({
     providedIn: 'root'
@@ -14,10 +14,10 @@ export class MenuService {
     resetSource$ = this.resetSource.asObservable();
 
     onMenuStateChange(event: MenuChangeEvent) {
-        this.menuSource.next(event);
+        this.menuSource.next(event)
     }
 
     reset() {
-        this.resetSource.next(true);
+        this.resetSource.next(true)
     }
 }
