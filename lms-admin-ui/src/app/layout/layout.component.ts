@@ -35,7 +35,7 @@ import { TopBarComponent } from './topbar.component'
 					<router-outlet></router-outlet>
 				</div>
 			</div>
-			<app-config></app-config>
+			<!-- <app-config></app-config> -->
 			<div class="layout-mask"></div>
 		</div>
 	`,

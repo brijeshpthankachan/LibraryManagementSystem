@@ -53,19 +53,13 @@ import { MenuService } from './service/menu.service'
 export class MenuitemComponent implements OnInit, OnDestroy {
 
     @Input() item: any
-
     @Input() index!: number
-
     @Input() @HostBinding('class.layout-root-menuitem') root!: boolean
-
     @Input() parentKey!: string
 
     active = false;
-
     menuSourceSubscription: Subscription
-
     menuResetSubscription: Subscription
-
     key: string = "";
 
     constructor(public layoutService: LayoutService, private cd: ChangeDetectorRef, public router: Router, private menuService: MenuService) {
