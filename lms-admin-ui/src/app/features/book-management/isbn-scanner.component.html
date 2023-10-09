@@ -1,20 +1,24 @@
 <p-dialog
-	header="Add New Book"
-	[(visible)]="isScannerDialogDialogVisible"
-	[modal]="true"
-	[style]="{ width: '50vw' }"
-	[draggable]="false"
-	[resizable]="false"
+    [(visible)]="isScannerDialogDialogVisible"
+    [modal]="true"
+    [draggable]="false"
+    [resizable]="false"
+    [style]="{ width: '50vw' }"
+    [closable]="false"
 >
-	<div>
-		<ngx-scanner-qrcode
-			#action="scanner"
-			[isBeep]="false"
-			(event)="test()"
-		></ngx-scanner-qrcode>
-
-		<button (click)="action.isStart ? action.stop() : action.start()">
-			{{ action.isStart ? 'Stop' : 'Start' }}
-		</button>
-	</div>
+    <ng-template pTemplate="header"></ng-template>
+    <div>
+        <ngx-scanner-qrcode
+            #action="scanner"
+            [isBeep]="false"
+            (event)="test()"
+        ></ngx-scanner-qrcode>
+    </div>
+    <ng-template pTemplate="footer">
+        <p-button
+            (click)="closeScannerDialog()"
+            label="Close"
+            styleClass="p-button-text"
+        ></p-button>
+    </ng-template>
 </p-dialog>

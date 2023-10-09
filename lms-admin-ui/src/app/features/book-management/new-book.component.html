@@ -1,72 +1,118 @@
 <p-dialog
-	[(visible)]="isNewBookDialogVisible"
-	(onHide)="onDialogHide()"
-	[modal]="true"
-	[style]="{ width: '50vw' }"
-	[draggable]="false"
-	[resizable]="false"
+    [(visible)]="isNewBookDialogVisible"
+    [modal]="true"
+    [style]="{ width: '50vw' }"
+    [draggable]="false"
+    [resizable]="false"
+    [closable]="false"
 >
-	<ng-template pTemplate="header"> Header content here </ng-template>
+    <ng-template
+        pTemplate="header"
+        class="w-none"
+    >
+        <div class="flex flex-grow-1">
+            <input
+                class="flex-grow-1"
+                type="text"
+                pInputText
+                placeholder="ISBN"
+                [ngModel]="isbn"
+            >
+            <p-button styleClass="p-button-secondary p-button-raised w-none p-button-lg p-0 mx-3">
+                <img
+                    alt="logo"
+                    src="assets/icons/search-globe.svg"
+                    style="width: 3.25rem;"
+                >
+            </p-button>
+            <p-button
+                (click)="showScannerDialog()"
+                styleClass="p-button-secondary p-button-raised w-none p-button-lg p-0"
+            >
+                <img
+                    alt="logo"
+                    src="assets/icons/scaner.svg"
+                    style="width: 3.25rem;"
+                >
+            </p-button>
+        </div>
+    </ng-template>
 
-	<div>
-		<div class="formgrid grid">
-			<div class="field col-12 md:col-6">
-				<label for="firstname6">Firstname</label>
-				<input
-					id="firstname6"
-					type="text"
-					class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
-				/>
-			</div>
-			<div class="field col-12 md:col-6">
-				<label for="lastname6">Lastname</label>
-				<input
-					id="lastname6"
-					type="text"
-					class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
-				/>
-			</div>
-			<div class="field col-12">
-				<label for="address">Address</label>
-				<textarea
-					id="address"
-					type="text"
-					rows="4"
-					class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
-				></textarea>
-			</div>
-			<div class="field col-12 md:col-6">
-				<label for="city">City</label>
-				<input
-					id="city"
-					type="text"
-					class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
-				/>
-			</div>
-			<div class="field col-12 md:col-3">
-				<label for="state">State</label>
-				<select
-					id="state"
-					class="w-full text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round outline-none focus:border-primary"
-					style="appearance: auto"
-				>
-					<option>Arizona</option>
-					<option>California</option>
-					<option>Florida</option>
-					<option>Ohio</option>
-					<option>Washington</option>
-				</select>
-			</div>
-			<div class="field col-12 md:col-3">
-				<label for="zip">Zip</label>
-				<input
-					id="zip"
-					type="text"
-					class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
-				/>
-			</div>
-		</div>
-	</div>
+    <div>
+        <div class="formgrid grid">
+            <div class="field col-12 md:col-6">
+                <label for="firstname6">Firstname</label>
+                <input
+                    id="firstname6"
+                    type="text"
+                    class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+                >
+            </div>
+            <div class="field col-12 md:col-6">
+                <label for="lastname6">Lastname</label>
+                <input
+                    id="lastname6"
+                    type="text"
+                    class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+                >
+            </div>
+            <div class="field col-12">
+                <label for="address">Address</label>
+                <textarea
+                    id="address"
+                    type="text"
+                    rows="4"
+                    class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+                ></textarea>
+            </div>
+            <div class="field col-12 md:col-6">
+                <label for="city">City</label>
+                <input
+                    id="city"
+                    type="text"
+                    class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+                >
+            </div>
+            <div class="field col-12 md:col-3">
+                <label for="state">State</label>
+                <select
+                    id="state"
+                    class="w-full text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round outline-none focus:border-primary"
+                    style="appearance: auto"
+                >
+                    <option>Arizona</option>
+                    <option>California</option>
+                    <option>Florida</option>
+                    <option>Ohio</option>
+                    <option>Washington</option>
+                </select>
+            </div>
+            <div class="field col-12 md:col-3">
+                <label for="zip">Zip</label>
+                <input
+                    id="zip"
+                    type="text"
+                    class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+                >
+            </div>
+        </div>
+    </div>
 
-	<ng-template pTemplate="footer"> //buttons </ng-template>
+    <ng-template pTemplate="footer">
+        <div>
+            <p-button
+                class="p-button-lg"
+                (click)="onDialogHide()"
+            >
+                Close
+            </p-button>
+            <p-button class="p-button-lg">Save</p-button>
+        </div>
+    </ng-template>
 </p-dialog>
+
+<app-isbn-scanner
+    *ngIf="isScannerDialogVisible"
+    [isScannerDialogDialogVisible]="isScannerDialogVisible"
+    (isScannerDialogDialogVisibleChange)="setValue($event)"
+></app-isbn-scanner>

@@ -14,6 +14,7 @@ export class AppComponent {
 	title = 'lms-admin-ui'
 
 	constructor(public translate: TranslateService) {
+
 		translate.addLangs(['en', 'fr'])
 		translate.setDefaultLang('en')
 

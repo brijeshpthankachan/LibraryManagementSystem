@@ -1,34 +1,43 @@
 import { CommonModule } from '@angular/common'
-import { Component, EventEmitter, Input, Output, ViewChild } from '@angular/core'
-import { NgxScannerQrcodeComponent, NgxScannerQrcodeModule } from 'ngx-scanner-qrcode'
+import { Component, EventEmitter, Input, Output } from '@angular/core'
+import { FormsModule } from '@angular/forms'
+import { NgxScannerQrcodeModule } from 'ngx-scanner-qrcode'
 import { ButtonModule } from 'primeng/button'
 import { DialogModule } from 'primeng/dialog'
+import { InputTextModule } from 'primeng/inputtext'
+import { IsbnScannerComponent } from "./isbn-scanner.component"
+
 
 @Component({
   selector: 'app-new-book',
   standalone: true,
-  imports: [CommonModule, ButtonModule, DialogModule, NgxScannerQrcodeModule],
   templateUrl: './new-book.component.html',
+  imports: [CommonModule, ButtonModule, DialogModule, NgxScannerQrcodeModule, InputTextModule, IsbnScannerComponent, FormsModule]
 })
 export class NewBookComponent {
 
-  @Input() isNewBookDialogVisible = true
-  @Output() isNewBookDialogVisibleChange = new EventEmitter<boolean>()
-  onDialogHide() {
-    this.isNewBookDialogVisibleChange.emit(false)
+  isbn = ''
+  setValue(event: string) {
+    console.log(event)
+    this.isbn = event
+    this.closeScannerDialog()
   }
 
-  @ViewChild('action', { static: false }) scannerComponent: NgxScannerQrcodeComponent
+  @Input() isNewBookDialogVisible = true
+  @Output() isNewBookDialogVisibleChange = new EventEmitter<boolean>()
 
-  barcodeValue: string
+  isScannerDialogVisible = false
 
-  test() {
-    this.scannerComponent.data
-    this.scannerComponent.data.subscribe(e => this.barcodeValue = e[0].value)
-    if (this.barcodeValue) {
-      console.log(this.barcodeValue)
-      this.scannerComponent.stop()
-    }
+  showScannerDialog() {
+    this.isScannerDialogVisible = true
+  }
 
+  closeScannerDialog() {
+    this.isScannerDialogVisible = false
+  }
+
+  onDialogHide() {
+    this.isNewBookDialogVisible = false
+    this.isNewBookDialogVisibleChange.emit(false)
   }
 }

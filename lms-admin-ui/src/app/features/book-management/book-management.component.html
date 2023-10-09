@@ -1,67 +1,74 @@
 <p-table
-	#dt2
-	[value]="book"
-	dataKey="id"
-	[rows]="10"
-	[showCurrentPageReport]="true"
-	[rowsPerPageOptions]="[10, 25, 50]"
-	[paginator]="true"
-	currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
-	[globalFilterFields]="[
+    #dt2
+    [value]="book"
+    dataKey="id"
+    [rows]="10"
+    [showCurrentPageReport]="true"
+    [rowsPerPageOptions]="[10, 25, 50]"
+    [paginator]="true"
+    currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+    [globalFilterFields]="[
 		'name',
 		'country.name',
 		'representative.name',
 		'status'
 	]"
-	[tableStyle]="{ 'min-width': '75rem' }"
+    [tableStyle]="{ 'min-width': '75rem' }"
 >
-	<ng-template pTemplate="caption">
-		<div class="flex justify-content-center pt-1">
-			<p-button
-				styleClass="p-button-secondary p-button-lg h-full"
-				(click)="openNewBookDialog()"
-			>
-				<span class="mr-2 font-bold">New</span>
-				<img
-					alt="logo"
-					src="assets/icons/library-book.svg"
-					style="width: 1.5rem"
-				/>
-				<span class="ml-2 font-bold">Book</span>
-			</p-button>
+    <ng-template pTemplate="caption">
+        <div class="flex justify-content-center pt-1">
+            <p-button
+                styleClass="p-button-secondary p-button-lg h-full"
+                (click)="openNewBookDialog()"
+            >
+                <span class="mr-2 font-bold">{{"PAGE.LABELS.NEW" | translate}}</span>
+                <img
+                    alt="logo"
+                    src="assets/icons/library-book.svg"
+                    style="width: 1.5rem"
+                >
+                <span class="ml-2 font-bold">Book</span>
+            </p-button>
 
-			<span class="p-input-icon-left ml-auto">
-				<i class="pi pi-search"></i>
-				<input pInputText type="text" placeholder="Search keyword" />
-			</span>
-		</div>
-	</ng-template>
-	<ng-template pTemplate="header">
-		<tr>
-			<th style="width: 22%">Title</th>
-			<th style="width: 22%">Author</th>
-			<th style="width: 22%">Published Year</th>
-			<th style="width: 22%">Genre</th>
-			<th style="width: 12%">ISBN</th>
-		</tr>
-	</ng-template>
-	<ng-template pTemplate="body" let-book>
-		<tr>
-			<td>{{ book.title }}</td>
-			<td>{{ book.author }}</td>
-			<td>{{ book.published_year }}</td>
-			<td>{{ book.genre }}</td>
-			<td>{{ book.isbn }}</td>
-		</tr>
-	</ng-template>
-	<ng-template pTemplate="emptymessage">
-		<tr>
-			<td colspan="5">No customers found.</td>
-		</tr>
-	</ng-template>
+            <span class="p-input-icon-left ml-auto">
+                <i class="pi pi-search"></i>
+                <input
+                    pInputText
+                    type="text"
+                    placeholder="Search keyword"
+                >
+            </span>
+        </div>
+    </ng-template>
+    <ng-template pTemplate="header">
+        <tr>
+            <th style="width: 22%">Title</th>
+            <th style="width: 22%">Author</th>
+            <th style="width: 22%">Published Year</th>
+            <th style="width: 22%">Genre</th>
+            <th style="width: 12%">ISBN</th>
+        </tr>
+    </ng-template>
+    <ng-template
+        pTemplate="body"
+        let-book
+    >
+        <tr>
+            <td>{{ book.title }}</td>
+            <td>{{ book.author }}</td>
+            <td>{{ book.published_year }}</td>
+            <td>{{ book.genre }}</td>
+            <td>{{ book.isbn }}</td>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="emptymessage">
+        <tr>
+            <td colspan="5">No customers found.</td>
+        </tr>
+    </ng-template>
 </p-table>
 
 <app-new-book
-	*ngIf="isNewBookDialogVisible"
-	[(isNewBookDialogVisible)]="isNewBookDialogVisible"
+    *ngIf="isNewBookDialogVisible"
+    [(isNewBookDialogVisible)]="isNewBookDialogVisible"
 ></app-new-book>

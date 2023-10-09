@@ -7,12 +7,13 @@ import { MultiSelectModule } from 'primeng/multiselect'
 import { TableModule } from 'primeng/table'
 import { TagModule } from 'primeng/tag'
 import { NewBookComponent } from "./new-book.component"
+import { TranslateModule } from '@ngx-translate/core'
 
 @Component({
   selector: 'app-book-management',
   standalone: true,
   templateUrl: './book-management.component.html',
-  imports: [CommonModule, TableModule, MultiSelectModule, DropdownModule, TagModule, ButtonModule, InputTextModule, NewBookComponent]
+  imports: [CommonModule, TableModule, MultiSelectModule, DropdownModule, TagModule, ButtonModule, InputTextModule, NewBookComponent, TranslateModule]
 })
 export class BookManagementComponent {
 
