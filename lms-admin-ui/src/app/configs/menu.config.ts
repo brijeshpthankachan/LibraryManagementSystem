@@ -9,7 +9,7 @@ export const menuConfig = [
 		label: 'Admin',
 		items: [
 			{ label: 'Accounts', icon: 'pi pi-fw pi-user', routerLink: ['/uikit/formlayout'] },
-			{ label: 'Book', icon: 'pi pi-fw pi-book', routerLink: ['/uikit/formlayout'] }
+			{ label: 'Book', icon: 'pi pi-fw pi-book', routerLink: ['book'] }
 		]
 	}
 ]

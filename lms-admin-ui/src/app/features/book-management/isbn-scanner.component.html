@@ -1,0 +1,11 @@
+<div>
+	<ngx-scanner-qrcode
+		#action="scanner"
+		[isBeep]="false"
+		(event)="test()"
+	></ngx-scanner-qrcode>
+
+	<button (click)="action.isStart ? action.stop() : action.start()">
+		{{ action.isStart ? 'Stop' : 'Start' }}
+	</button>
+</div>
