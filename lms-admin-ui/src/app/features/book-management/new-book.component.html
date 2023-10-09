@@ -1,5 +1,4 @@
 <p-dialog
-	header="Add New Book"
 	[(visible)]="isNewBookDialogVisible"
 	(onHide)="onDialogHide()"
 	[modal]="true"
@@ -7,6 +6,8 @@
 	[draggable]="false"
 	[resizable]="false"
 >
+	<ng-template pTemplate="header"> Header content here </ng-template>
+
 	<div>
 		<div class="formgrid grid">
 			<div class="field col-12 md:col-6">
@@ -66,4 +67,6 @@
 			</div>
 		</div>
 	</div>
+
+	<ng-template pTemplate="footer"> //buttons </ng-template>
 </p-dialog>

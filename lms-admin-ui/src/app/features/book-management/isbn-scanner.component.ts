@@ -1,15 +1,17 @@
 import { CommonModule } from '@angular/common'
 import { Component, ViewChild } from '@angular/core'
 import { NgxScannerQrcodeComponent, NgxScannerQrcodeModule } from 'ngx-scanner-qrcode'
+import { DialogModule } from 'primeng/dialog'
 
 @Component({
   selector: 'app-isbn-scanner',
   standalone: true,
-  imports: [CommonModule, NgxScannerQrcodeModule],
+  imports: [CommonModule, NgxScannerQrcodeModule, DialogModule],
   templateUrl: './isbn-scanner.component.html',
 })
 export class IsbnScannerComponent {
 
+  isScannerDialogDialogVisible = false;
   @ViewChild('action', { static: false }) scannerComponent: NgxScannerQrcodeComponent
 
   barcodeValue: string
